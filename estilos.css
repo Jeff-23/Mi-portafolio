@@ -1,3 +1,4 @@
+estilos 
 * {
     padding: 0px;
     margin: 0px;
@@ -27,12 +28,28 @@ body {
     gap: 80px;
 }
 
-.menu__link{
+.menu__link__uno{
     text-decoration: none;
     font-family: monospace;
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-segundario);
+}
+
+.menu__link__dos{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(255, 0, 0);
+}
+
+.menu__link__tres{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(67, 188, 67);
 }
 
 .container{
@@ -115,17 +132,18 @@ body {
 }
 
 .imagen__presentacion{
-    width: 50%;
+    width: 40%;
 }
 
 .footer{
     text-align: center;
     background-color: var(--color-terciario);
+    border: solid 1px var(--color-segundario);
     color: var(--color-segundario);
     padding: 20px;
     font-family: monospace;
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .texto__uno__mí{
@@ -145,7 +163,7 @@ body {
 } 
 
 .texto__cinco__mí{
-    color: rgb(241, 232, 125);
+    color: rgb(17, 186, 36);
 }
 
 .texto__siete__mí{
@@ -160,10 +178,19 @@ body {
     color: rgb(127, 58, 24);
 }
 
+.texto__diez__mi{
+    font-size: 1.5rem;
+    color: rgb(239, 184, 16);
+}
+
+.texto__once__mí{
+    color: var(--color-primario);
+}
+
 @media (max-width: 1200px){
     .container{
         flex-direction: column-reverse;
-        padding: 5%;
+        padding: 6%;
     }
 
     .menu__de__navegacion{
@@ -176,5 +203,8 @@ body {
 
     .navegacion__entre__paginas{
         justify-content: center;
+    }
+    
+    body {margin: auto;
     }
 }
