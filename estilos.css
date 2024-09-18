@@ -185,21 +185,36 @@ body {
     color:var(--color-primario);
 }
 
-@media (max-width: 1200px){
-    .container{
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
+    @media (max-width: 1200px){
+        .container{
+            flex-direction: column-reverse;
+            padding: 2% 5%; 
+            gap: 20px;
+        }
+    
+        .menu__de__navegacion{
+            padding: 5% 0;
+        } 
+    
+        .contenido__texto{
+            width: 95%;
+        }
+    
+        .navegacion__entre__paginas{
+            gap: 15px; 
+            justify-content: center; 
+        }
+    
+        .imagen__presentacion{
+            width: 50%; 
+        }
+    
+        .botones__red__social{
+            width: 70%;
+        }
 
-    .menu__de__navegacion{
-        padding: 10%;
-    } 
-
-    .contenido__texto{
-    width: auto;
+        .footer{
+            padding: 4% 0;
+        }
     }
-
-    .navegacion__entre__paginas{
-        justify-content: center;
-    }
-}
+    
