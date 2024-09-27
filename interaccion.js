@@ -1,4 +1,4 @@
-const btn = document.getElementById('button');
+const btn = document.getElementById('button');/*logica de formulario con email js*/ 
 
 document.getElementById('form')
     .addEventListener('submit', function(event) {
@@ -14,7 +14,6 @@ document.getElementById('form')
                 btn.value = 'Enviar';
                 alert('¡Mensaje enviado correctamente!');
                 
-                // Limpiar los campos del formulario
                 this.reset();
             }, (err) => {
                 btn.value = 'Enviar';

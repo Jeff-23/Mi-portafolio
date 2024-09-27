@@ -7,30 +7,30 @@
     --color-segundario:rgb(53, 114, 239);
     --color-terciario:rgb(241, 232, 125);
 }
-
+/*body usado para todas las paginas del proyecto*/
 body {
     box-sizing: border-box;
     background-color: var(--color-primario);
     color: var(--color-segundario);
-    height: 100%; /* Aseguramos que la altura sea del 100% de la pantalla */
+    height: 100%; 
     margin: 0;
     padding: 0;
 }
 
-
+/*estilo de bloque donde se ubica el menu de navegacion*/
 .menu__de__navegacion{
     text-align:right;
     padding: 1.5% 0 0 15%;
     background-color: var(--color-terciario);
     color: var(--color-segundario);
 }
-
+/*ubicacion de el menu de navegacion entre paginas*/
 .navegacion__entre__paginas{
     text-decoration: none;
     display: flex;
     gap: 80px;
 }
-
+/*estilos de link de presentacion*/
 .menu__link__uno{
     text-decoration: none;
     font-family: monospace;
@@ -38,7 +38,7 @@ body {
     font-weight: 600;
     color: var(--color-segundario);
 }
-
+/*estilos de link de estudios*/
 .menu__link__dos{
     text-decoration: none;
     font-family: monospace;
@@ -46,7 +46,7 @@ body {
     font-weight: 600;
     color: rgb(255, 0, 0);
 }
-
+/*estilos de link de presentacion*/
 .menu__link__tres{
     text-decoration: none;
     font-family: monospace;
@@ -54,7 +54,7 @@ body {
     font-weight: 600;
     color: rgb(37, 160, 37);
 }
-
+/*estilos de link de contactame con formulario*/
 .menu__link__cuatro{
     text-decoration: none;
     font-family: monospace;
@@ -62,7 +62,7 @@ body {
     font-weight: 600;
     color: var(--color-primario);
 }
-
+/*caja de todo el contenido dentro del body*/
 .container{
     min-height: calc(100vh - 100px);
     display: flex;
@@ -71,26 +71,22 @@ body {
     justify-content:center;
     gap: 82px; 
 }
-
+/*texto de parrafos*/
 .contenido__texto {
     width: 50%;
 }
-
+/*texto de titulo h1*/
 .titulo__texto {
     font-size: 1.8rem;
     font-family: 'Courier New', Courier, monospace;
 }
-
-.color__desactacado{
-    color: var(--color-terciario);
-}
-
+/*tamaño de parrafo en todas las paginas*/
 .parrafo__tamaño{
     font-size:  1.25rem; 
     font-family:monospace;
     font-weight: 200;
 }
-
+/*estilos de colores de partes de texto con etiqueta <strong en presentacion>*/
 .color__nombre {
     color: rgb(194, 58, 58);
 }
@@ -101,14 +97,14 @@ body {
 .hablamos{
     color: rgb(250, 155, 54);
 }
-
+/*estilos de texto "accede a mis redes"*/
 .texto__redes {
     font-size: 1.5rem;
     font-family: monospace;
     text-align: center;
     font-weight: 400;
 }
-
+/*posicion de botones de red social*/
 .botones{
     display: flex;
     justify-content: space-between;
@@ -116,7 +112,7 @@ body {
     align-items:center ;
     gap: 25px;
 }
-
+/*estilos de botones de red social*/
 .botones__red__social{
     width: 50%;
     text-align: center;
@@ -132,36 +128,36 @@ body {
     justify-content: center;
     gap: 10px;
 }
-
+/*interaccion de colores en botones de red social*/
 .botones__red__social:hover{
     background-color:rgb(246, 251, 122);
 }
-
+/*imagenes en botones de red social*/
 .img__redes__tamaño{
     border: 6px ;
     height: 33px;
     width: 33px;
 }
-
+/*imagen puesta como presentacion en link presentacion y link experiecias*/
 .imagen__presentacion{
     width: 30%;
 }
-
+/* tamaño de titulo de texto en presentacion, estudios y experiencias*/
 .titulo__texto {
     font-size: 2em;
     margin-bottom: 20px;
 }
-
+/* estilo y tamaño de titulo en link contactame */
 .titulo__texto__formulario {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-
+/* tamaño de parrafo de texto en presentacion, estudios y experiencias*/
 .parrafo__tamaño {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
-
+/* estilo y tamaño de parrafo en link contactame */
 .parrafo__tamaño__formulario {
     font-size: 1.5rem;
     margin-bottom: 30px;
@@ -172,34 +168,34 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 400px; /* Cambia esto según el tamaño que necesites */
-    margin: 20px auto; /* Añadido para centrar el formulario */
+    max-width: 400px; 
+    margin: 20px auto; 
     padding: 20px;
-    border: 1px solid #ccc; /* Borde de los campos */
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: var(--color-terciario); /* Color de fondo del formulario */
-    color: var(--color-segundario); /* Color del texto */
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    background-color: var(--color-terciario); 
+    color: var(--color-segundario); 
     font-size: 1.5rem;
 }
-
+/* tamaño y letra de nombre, mensaje, email y renponder a, en formulario */
 .formulario__contacto label {
     margin-bottom: 5px;
-    font-family: monospace; /* Tipografía consistente */
+    font-family: monospace; 
 }
-
+/* estilos de caja de formulario */
 .formulario__contacto input {
     padding: 10px;
-    margin-bottom: 15px; /* Espaciado entre campos */
-    border: 1px solid var(--color-segundario); /* Borde de los campos */
-    border-radius: 4px; /* Bordes redondeados para campos */
-    background-color: #fff; /* Color de fondo de los campos */
-    color: var(--color-secundario); /* Color del texto de los campos */
+    margin-bottom: 15px; 
+    border: 1px solid var(--color-segundario); 
+    border-radius: 4px; 
+    background-color: #fff; 
+    color: var(--color-secundario); 
     font-size: 20;
 }
-
-.botones__red__social__formulario {
+/* estilos en boton enviar */
+.boton__enviar__formulario {
     padding: 10px;
-    background-color: var(--color-segundario); /* Cambia esto por el color que prefieras */
+    background-color: var(--color-segundario);
     color: white;
     border: none;
     border-radius: 4px;
@@ -207,11 +203,11 @@ body {
     font-family: monospace;
     font-size: 1.5rem;
 }
-
-.botones__red__social:hover {
-    background-color: rgb(246, 251, 122); /* Color al pasar el mouse */
+/* interaccion en boton enviar */
+.boton__enviar__formulario:hover {
+    background-color: rgb(246, 251, 122);
 }
-
+/*pie de pagina*/
 .footer{
     text-align: center;
     background-color: var(--color-terciario);
@@ -221,7 +217,7 @@ body {
     font-size: 1.2rem;
     font-weight: 500;
 }
-
+/* colores en textos con etiqueta <span> para cambiar colores en textos */
 .texto__uno__mí{
     color: rgb(255, 0, 0);
 }
@@ -262,7 +258,7 @@ body {
 .texto__once__mi{
     color:var(--color-primario);
 }
-
+/*responsive para cambio de tamaño en pantallas*/
     @media (max-width: 1200px){
         .container{
             flex-direction: column-reverse;
