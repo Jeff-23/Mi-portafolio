@@ -12,7 +12,11 @@ body {
     box-sizing: border-box;
     background-color: var(--color-primario);
     color: var(--color-segundario);
+    height: 100%; /* Aseguramos que la altura sea del 100% de la pantalla */
+    margin: 0;
+    padding: 0;
 }
+
 
 .menu__de__navegacion{
     text-align:right;
@@ -51,11 +55,20 @@ body {
     color: rgb(37, 160, 37);
 }
 
+.menu__link__cuatro{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primario);
+}
+
 .container{
+    min-height: calc(100vh - 100px);
     display: flex;
     align-items:center;
-    padding: 6% 15%;
-    justify-content:space-between;
+    padding: 15px;
+    justify-content:center;
     gap: 82px; 
 }
 
@@ -131,7 +144,72 @@ body {
 }
 
 .imagen__presentacion{
-    width: 40%;
+    width: 30%;
+}
+
+.titulo__texto {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.titulo__texto__formulario {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.parrafo__tamaño {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.parrafo__tamaño__formulario {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Estilos del formulario */
+.formulario__contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Cambia esto según el tamaño que necesites */
+    margin: 20px auto; /* Añadido para centrar el formulario */
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: var(--color-terciario); /* Color de fondo del formulario */
+    color: var(--color-segundario); /* Color del texto */
+    font-size: 1.5rem;
+}
+
+.formulario__contacto label {
+    margin-bottom: 5px;
+    font-family: monospace; /* Tipografía consistente */
+}
+
+.formulario__contacto input {
+    padding: 10px;
+    margin-bottom: 15px; /* Espaciado entre campos */
+    border: 1px solid var(--color-segundario); /* Borde de los campos */
+    border-radius: 4px; /* Bordes redondeados para campos */
+    background-color: #fff; /* Color de fondo de los campos */
+    color: var(--color-secundario); /* Color del texto de los campos */
+    font-size: 20;
+}
+
+.botones__red__social__formulario {
+    padding: 10px;
+    background-color: var(--color-segundario); /* Cambia esto por el color que prefieras */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+.botones__red__social:hover {
+    background-color: rgb(246, 251, 122); /* Color al pasar el mouse */
 }
 
 .footer{

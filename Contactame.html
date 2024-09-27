@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame</title>
+    <script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+emailjs.init('rZv-zJpfNIF6syDSi')
+</script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="menu__de__navegacion">
+        <nav class="navegacion__entre__paginas">
+            <a class="menu__link__uno" href="index.html">Presentación</a>
+            <a class="menu__link__dos" href="estudios.html">Estudios</a>
+            <a class="menu__link__tres" href="sobremí.html">Experiencias</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="contenido__texto">
+            <h1 class="titulo__texto__formulario">
+                <strong class="color__desactacado">¡Contáctame!</strong> 
+            </h1>
+            <p class="parrafo__tamaño__formulario">
+                Si tienes alguna consulta, no dudes en escribirme. Completa el formulario a continuación y me pondré en contacto contigo lo antes posible.
+            </p>
+        </section>
+    
+        <!-- Aquí el formulario -->
+        <form class="formulario__contacto" id="form">
+            <div class="field">
+                <label for="from_name">Nombre:</label>
+                <input type="text" name="from_name" id="from_name" required>
+            </div>
+            <div class="field">
+                <label for="message">Mensaje:</label>
+                <input type="text" name="message" id="message" required>
+            </div>
+            <div class="field">
+                <label for="email_id">Email:</label>
+                <input type="email" name="email_id" id="email_id" required>
+            </div>
+            <div class="field">
+                <label for="reply_to">Responder a:</label>
+                <input type="text" name="reply_to" id="reply_to">
+            </div>
+    
+            <input class="botones__red__social__formulario" type="submit" id="button" value="Enviar">
+        </form> 
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por <span class="texto__once__mi">Jeffry Salazar</span></p>
+    </footer>
+    <script src="interaccion.js"></script>
+</body>
+</html>
+
